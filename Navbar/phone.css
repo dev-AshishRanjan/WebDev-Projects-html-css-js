@@ -1,0 +1,22 @@
+.menu ul, .searchbar{
+    display: none;
+}
+/* .logo{
+} */
+.bars{
+    display: grid;
+    place-content: center;
+    place-items: center;
+    font-size: 1.5rem;
+    /* position: fixed; */
+}
+#navbar{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+body{
+    height: 115vh;
+}
+.menu ul{
+    margin: 0px;
+}

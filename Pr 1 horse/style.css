@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(194, 177, 177) ;
+    
+}
+/* navbar */
+#navbar{
+    background-color: black;
+    display: flex;
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    
+}
+
+/* logo */
+.logo{
+    position: absolute;
+    left: 25%;
+}
+.logo img{
+    height: 60px;
+    width: 200px;
+    filter: invert(1);
+}
+
+/* navlist */
+#navlist{
+    height:inherit ;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: absolute;
+    right: 25%;
+}
+#navlist ul{
+    color: white;
+    display: flex;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+#navlist ul li a{
+    text-decoration: none;
+    color: rgb(190, 131, 22);
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+#navlist ul li :hover{
+    color: rgb(192, 204, 20);
+    font-size: 1.3rem;
+    padding: 0.795rem;
+    margin:0.99rem
+}
+#navlist ul li a:active{
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+}
+
+/* searchbar */
+.searchbar{
+    position: absolute;
+    right: 5%;
+    top: 2%;
+}
+.searchbar input{
+    font-size: 0.8rem;
+    border-radius: 2rem;
+    color: chocolate;
+    background-color: black;
+    padding: 5px;
+    border: 1px solid chocolate;
+
+}
+
+/* dropdown-menu */
+#menu{
+    position: absolute;
+    right: 5px;
+    margin: 5px;
+    padding: 0px;
+    /* height: 20px; */
+    /* width: 10px; */
+    border-radius:20%;
+    border: 2px solid red;
+    color: rgb(220, 245, 132);
+    font-size:2rem;
+    background-color:black;
+    /* border: none; */
+}
+
+/* 1st block: images gallary */
+.gallarySection{
+    background-color: black;
+    display: flex;
+}
+
+#gallary{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    background: url("images/gallary1.jpg") no-repeat center center / cover;
+    transition: all 0.7s ease-in-out;
+    width:10000%;
+    /* height: 100vh; */
+    /* height: 90vh; */
+    /* margin: 0 ; */
+    border: 2px solid red;
+    /* margin:1px */
+    z-index: 1;
+    opacity: 0.5;
+    /* filter: blur(1px);  */
+}
+.text{
+    opacity: 1;
+}
+.text #name{
+    color: white;
+    font-size: 3rem;
+    opacity: 1;
+    z-index: 2;
+    text-align: center;
+    margin-top: 100px;
+}
+.text #slogan{
+    color: white;
+    font-size: 1rem;
+    opacity: 1;
+    z-index: 2;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.text #work{
+    color: white;
+    font-size: 1.5rem;
+    opacity: 1;
+    z-index: 2;
+    margin: 12px auto;
+    text-align: center;
+}
+#one{
+    background: url("images/gallary2.jpg") no-repeat center center / cover;
+    width: 0%;
+    height:70vh;
+    transition: all 0.7s ease-in-out;
+    /* border: 2px solid red; */
+    margin:1px;
+    z-index: 1;
+    position: relative;
+    top: 3rem;
+
+}
+#three{
+    background: url("images/gallary3.jpg") no-repeat center center / cover;
+    width: 0%;
+    height:70vh;
+    transition: all 0.7s ease-in-out;
+    /* border: 2px solid red; */
+    margin:1px;
+    z-index: 1;
+    position: relative;
+    top: 3rem;
+
+}
+.gallarySection .maindata #btn1 #left{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    border: 2px solid white;
+    transition: all 1s ease-in-out;
+}
+.gallarySection .maindata #btn1 #mid{
+    width: 20px;
+    height: 10px;
+    border-radius: 20px;
+    background-color: white;
+    border: 2px solid white;
+    transition-property: all 2s ease-in .1s;
+    transition: all 1s ease-in-out;
+}
+/* .gallarySection #gallary #btn1 #mid:active{
+    width: 220px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(190, 172, 10);
+    border: 2px solid white;
+    transition-property: all 2s ease-in .1s;
+} */
+.gallarySection .maindata #btn1 #right{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    border: 2px solid white;
+    transition: all 1s ease-in-out;
+}
+.gallarySection .maindata #btn1 {
+    position: absolute;
+    top: 60vh;
+    display: inline-block;
+    margin: auto;
+    left: 48vw;
+
+}
+
+
+.maindata{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 70vh;
+}
+
+
+/* secondSection */
+
+
+.secondSection{
+    /* background: url("/images/doruk-yemenici-M7Qzh_PD2mM-unsplash.jpg") no-repeat center center/cover; */
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cards{
+    width: 30vw;
+    height: 40vh;
+    border: 4px solid red;
+    text-align: left;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 40px;
+    box-shadow: 4px 4px 14px green;
+}
+.cards h1{
+    text-align: center;
+}
+#card-1{
+    display: none;
+}
+#card-2{
+    display: block;
+}
+#card-3{
+    display: none;
+}
+.secondSection ul{
+    margin: 15px;
+}
+
+/* third section */
+.thirdSection{
+    margin: 2.5rem;
+}
+.thirdSection h2{
+    display: grid;
+    place-content: center;
+    place-items: center;
+    margin: 1.5rem;
+}
+.thirdSection #contactbox{
+    display: grid;
+    text-align: center;
+    /* place-content: center;
+    place-items: center; */
+    grid-template-columns: auto auto auto;
+    color: blue;
+}
+
+.first_line{
+    color:rgb(22, 22, 124);
+    font-size: 1.3rem;
+}
+/* footer */
+footer{
+    background-color: black;
+    color: rgb(214, 162, 84);
+    text-align: center;
+}

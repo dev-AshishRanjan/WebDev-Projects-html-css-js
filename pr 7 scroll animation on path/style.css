@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    scroll-behavior: smooth;
+}
+header h1,h2{
+    font-family: "Ubuntu",sans-serif;
+}
+h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+h2{
+    font-size: 2rem;
+}
+header,footer{
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background: linear-gradient(rgba(255, 0, 0, 0.438),rgba(0, 0, 255, 0.281)),url("./images/plane.png") no-repeat center center / cover;
+    background-attachment: fixed;
+}
+header{
+    place-items: center;
+}
+.animation{
+    height: 100vh;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    position: relative;
+    overflow: hidden;
+}
+.animation img{
+    position: absolute;
+    height: 9vw;
+    color: red;
+    top: 50%;
+    left: 0;
+    transform: rotateY(180deg);
+}

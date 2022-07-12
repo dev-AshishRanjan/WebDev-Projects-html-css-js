@@ -1,0 +1,29 @@
+.body3{
+    min-height: 100vh;
+    background: linear-gradient(rgb(3, 3, 61),grey);
+}
+this will cover the whole part till where screen is extended in linear-gradient()
+
+######  blending between two images/colors #####
+section::before{   //this section is the upper image/color
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:100px;
+    background:linear-gradient(to top,bottom_color,transparents);   //bottom_color--color of the section below or second section
+    z-index:greater than both sections
+}
+
+
+########  scrolling effect ########
+
+window.addEventListener("scroll",()=>{
+    let val= window.scrollY;
+    console.log(val);
+    moon.style.top =val*1.05 +"px";
+    bg_cloud.style.left =val*0.75+"px";
+    bg_cloud2.style.right =val*0.75+"px";
+    btn_home.style.marginTop =val*0.75+"px";
+    text.style.marginTop =val*0.75+"px";
+})

@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+    transition: all 0.2s linear;
+}
+body{
+    background-color: wheat;
+}
+.navbar{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar i{
+    background: black;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 7px goldenrod;
+    cursor: pointer;
+    /* border: 1px solid white; */
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.border{
+    position: fixed;
+    /* padding: 1rem; */
+    border: 0.2rem solid rgb(253, 235, 200);
+    height: 25rem;
+    width: 17rem;
+    margin-top: 7rem;
+    margin-left: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:inset 2px 2px 10px rgba(155, 155, 155, 0.685);
+    border-radius: 1rem;
+}
+#border-1{
+    top: 15%;
+    left:5%;
+}
+#border-2{
+    top: 15%;
+    left:35%;
+}
+#border-3{
+    top: 15%;
+    right: 5%;
+}
+.card{
+    background-color: rgb(253, 235, 200);
+    background: linear-gradient(180deg,rgba(255, 255, 255, 0.849),rgba(255, 255, 255, 0.288));
+    height: 23rem;
+    width: 15rem;
+    /* box-shadow: 3px 3px 10px grey; */
+    border-radius: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.616);
+    transition: all 0.3s ease-in;
+
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(0.1rem);
+    cursor: pointer;
+}
+.card:hover{
+    margin-bottom: 5rem;
+    box-shadow:2px 2px 10px rgba(155, 155, 155, 0.685);
+}
+.card .fa-broom{
+    font-size: 2rem;
+    margin: 1rem;
+    border-radius: 50%;
+    background: linear-gradient(180deg,rgba(202, 172, 0, 0.76),rgba(202, 172, 0, 0.199));
+    padding: 1rem;
+    box-shadow:2px 2px 10px rgba(155, 155, 155, 0.685);
+}
+#card-2 .fa-helicopter{
+    font-size: 2rem;
+    margin: 1rem;
+    border-radius: 50%;
+    background: linear-gradient(180deg,rgba(0, 163, 163, 0.932),rgba(0, 163, 163, 0.171));
+    padding: 1rem;
+    box-shadow:2px 2px 10px rgba(155, 155, 155, 0.685);
+}
+#card-3 .fa-fighter-jet{
+    font-size: 2rem;
+    margin: 1rem;
+    border-radius: 50%;
+    background: linear-gradient(180deg,rgba(255, 0, 47, 0.966),rgba(255, 0, 43, 0.171));
+    padding: 1rem;
+    box-shadow:2px 2px 10px rgba(155, 155, 155, 0.685);
+}
+h1{
+    margin-top: 1rem;
+}
+.data{
+    margin-bottom: 1.5rem;
+    margin-top: 1.2rem;
+}
+.data i{
+    margin-right: 0.2rem;
+    gap: 0.3rem;
+}
+.btn{
+    padding: 0.7rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.767);
+    font-weight: 900;
+    box-shadow:2px 2px 10px rgba(155, 155, 155, 0.685);
+    cursor: pointer;
+}
+.fa-check{
+    color: magenta;
+}
+.fa-times{
+    color: rgb(0, 255, 255);
+}
+#card-1 .btn{
+    background: linear-gradient(180deg,rgba(202, 172, 0, 0.76),rgba(202, 172, 0, 0.199));
+}
+#card-2 .btn{
+    background: linear-gradient(180deg,rgba(0, 163, 163, 0.932),rgba(0, 163, 163, 0.171));
+}
+#card-3 .btn{
+    background: linear-gradient(180deg,rgba(255, 0, 47, 0.966),rgba(255, 0, 43, 0.171));
+}

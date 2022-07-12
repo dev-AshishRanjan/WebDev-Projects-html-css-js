@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Scroll</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./animation.css">
+    <link rel="stylesheet" href="./smoke.css">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@500&family=Festive&family=Lobster&family=Roboto+Mono&family=Stylish&family=Supermercado+One&family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main" data-0="transform:translateX(0%);" data-6000="transform:translateX(-600%);">  <!-- 600% for 7 sections and 6000 is the scrolling limit -->
+        <!-- horizontal Scroll -->
+        <div id="section-1" class="pages">
+            <h1>Horizontal Scroll</h1>
+            <h2>using Skrollr.js</h2>
+            <br>
+            <p> data-0="transform:translateX(0%);" data-6000="transform:translateX(-600%);"</p>
+            <p>Above code in main/body tag.</p>
+            <p>
+                script type="text/javascript" src="skrollr.js"> /script> <br>
+                script type="text/javascript"> <br>
+                var s = skrollr.init(); <br>
+                /script>
+            </p>
+        </div>
+        <div id="section-2" class="pages">
+            <h2>Section-1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, minima. Debitis accusamus, consectetur amet eum expedita culpa? Dolores quam ea eum alias nesciunt? Mollitia magnam debitis ratione rerum enim corporis explicabo, quidem molestias voluptates quia quas quis sunt architecto! Soluta facilis in fugiat alias totam animi et corporis quam ipsam.</p>
+        </div>
+        <div id="section-3" class="pages">
+            <h2>Section-2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, minima. Debitis accusamus, consectetur amet eum expedita culpa? Dolores quam ea eum alias nesciunt? Mollitia magnam debitis ratione rerum enim corporis explicabo, quidem molestias voluptates quia quas quis sunt architecto! Soluta facilis in fugiat alias totam animi et corporis quam ipsam.</p>
+        </div>
+        <!-- css 3d animation -->
+        <div id="section-4" class="pages">
+            <h1>CSS 3D ANIMATION</h1>
+            <h2>Using css keyframes</h2>
+            <p>transform-style: preserve-3d;</p>
+            <p>transform:perspective(500px) rotateX(135deg)</p>
+            <p>animation-delay: calc(-11s * var(--i));</p>
+        </div>
+        <div id="section-5" class="pages">
+            
+            <div class="container">
+                <span style="--i:1"></span>  <!-- variable name i with value 1 -->
+                <span style="--i:2"></span>
+                <span style="--i:3"></span>
+                <span style="--i:4"></span>
+                <span style="--i:5"></span>
+                <span style="--i:6"></span>
+                <span style="--i:7"></span>
+                <span style="--i:8"></span>
+                <span style="--i:9"></span>
+                <span style="--i:10"></span>
+                <span style="--i:11"></span>
+                <span style="--i:12"></span>
+            </div>
+
+        </div>
+        <!-- smoke text effect -->
+        <div id="section-6" class="pages">
+            <h1>Smoke Effect</h1>
+            <h2>using video background</h2>
+            <p>css(on video tag) :</p>
+            <ul>
+                <li>position: absolute;</li>
+                <li>bottom: 0;</li>
+                <li>height: 100%;</li>
+                <li>width: 100%;</li>
+                <li>object-fit: cover;</li>
+            </ul>
+            <p>css(on text) :</p>
+            <ul>
+                <li>z-index: 5;</li>
+                <li>mix-blend-mode: overlay;</li>
+            </ul>
+        </div>
+        <div id="section-7" class="pages">
+            <h2>Bura na mano HOLI hai..</h2>
+            <video src="./images/Red - 91074.mp4" autoplay muted loop type="mp4"></video>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+    <script type="text/javascript" src="skrollr.js"></script>
+	<script type="text/javascript">
+	var s = skrollr.init();
+	</script>
+</body>
+</html>

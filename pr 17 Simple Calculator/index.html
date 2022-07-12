@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator (glassmorphism)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@500&family=Festive&family=Lobster&family=Roboto+Mono&family=Stylish&family=Supermercado+One&family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="calc">
+            <div class="secScreen">
+                <div class="screenWrap">
+                    <div class="upperScreen"></div>
+                    <div class="lowerScreen"></div>
+                </div>
+            </div>
+            <div class="secKeys">
+                <div class="key" id="key1" onclick="updateValue('C')">C</div>
+                <div class="key" id="key2" onclick="updateValue('base')">+/-</div>
+                <div class="key" id="key3" onclick="updateValue('B')"><i class="fas fa-backspace"></i></div>
+                <div class="key" id="key4" onclick="updateValue('/')"><i class="fas fa-divide"></i></div>
+                <div class="key" id="key5" onclick="updateValue(7)">7</div>
+                <div class="key" id="key6" onclick="updateValue(8)">8</div>
+                <div class="key" id="key7" onclick="updateValue(9)">9</div>
+                <div class="key" id="key8" onclick="updateValue('*')"><i class="fas fa-times"></i></div>
+                <div class="key" id="key9" onclick="updateValue(4)">4</div>
+                <div class="key" id="key10" onclick="updateValue(5)">5</div>
+                <div class="key" id="key11" onclick="updateValue(6)">6</div>
+                <div class="key" id="key12" onclick="updateValue('-')"><i class="fas fa-minus"></i></div>
+                <div class="key" id="key13" onclick="updateValue(1)">1</div>
+                <div class="key" id="key14" onclick="updateValue(2)">2</div>
+                <div class="key" id="key15" onclick="updateValue(3)">3</div>
+                <div class="key" id="key16" onclick="updateValue('+')"><i class="fas fa-plus"></i></div>
+                <div class="key" id="key17" onclick="updateValue(0)">0</div>
+                <div class="key" id="key18" onclick="updateValue('.')">.</div>
+                <div class="key" id="key19" onclick="updateValue('=')"><i class="fas fa-equals"></i></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./app.js"></script>
+</html>

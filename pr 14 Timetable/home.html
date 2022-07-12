@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- html approach -->
+    <!-- <meta http-equiv="refresh" content="7; url=https://www.youtube.com"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@500&family=Festive&family=Lobster&family=Roboto+Mono&family=Stylish&family=Supermercado+One&family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <div class="bg-pic">
+        <img src="./images/nits.png" alt="">
+    </div> -->
+    <div class="navbar">
+        <a href="http://www.nits.ac.in/" target="_blank"><img src="./images/nits.png" alt="NITS"></a>
+        <div>
+            <a href="#">Meets</a>
+            <i class="fab fa-battle-net" onclick="inverse()"></i>
+        </div>
+    </div>
+    <div class="main">
+        <div class="cards">
+            <div class="card" id="mon">
+                <h1>MONDAY</h1>
+                <div class="table">
+                    <p>Time</p>
+                    <p>Subject/Links</p>
+                    <p>8am-9am</p>
+                    <a href="#meet">CS 101(DS)</a>
+                    <p>9am-10am</p>
+                    <a href="#meet">EC101(T) K1(UC)</a>
+                    <p>10am-11am</p>
+                    <a href="#meet"> CH 101</a>
+                    <p>11am-12am</p>
+                    <a href="#meet">MA 101(SR/BN) </a>
+                    <p>1am-2am</p>
+                    <a href="#meet">CE 102(VK)</a>
+                    <p>2am-3am</p>
+                    <a href="#meet">---</a>
+                    <p>3am-4am</p>
+                    <a href="#meet">---</a>
+                    <p>4am-5am</p>
+                    <a href="#meet">---</a>
+                </div>
+            </div>
+            <div class="card" id="tue">
+                <h1>TUESDAY</h1>
+                <div class="table">
+                    <p>Time</p>
+                    <p>Subject/Links</p>
+                    <p>8am-9am</p>
+                    <a href="#meet">meet</a>
+                    <p>9am-10am</p>
+                    <a href="#meet">meet</a>
+                    <p>10am-11am</p>
+                    <a href="#meet">meet</a>
+                    <p>11am-12am</p>
+                    <a href="#meet">meet</a>
+                    <p>1am-2am</p>
+                    <a href="#meet">meet</a>
+                    <p>2am-3am</p>
+                    <a href="#meet">meet</a>
+                    <p>3am-4am</p>
+                    <a href="#meet">meet</a>
+                    <p>4am-5am</p>
+                    <a href="#meet">meet</a>
+                </div>
+            </div>
+            <div class="card" id="wed">
+                <h1>WEDNESDAY</h1>
+                <div class="table">
+                    <p>Time</p>
+                    <p>Subject/Links</p>
+                    <p>8am-9am</p>
+                    <a href="#meet">meet</a>
+                    <p>9am-10am</p>
+                    <a href="#meet">meet</a>
+                    <p>10am-11am</p>
+                    <a href="#meet">meet</a>
+                    <p>11am-12am</p>
+                    <a href="#meet">meet</a>
+                    <p>1am-2am</p>
+                    <a href="#meet">meet</a>
+                    <p>2am-3am</p>
+                    <a href="#meet">meet</a>
+                    <p>3am-4am</p>
+                    <a href="#meet">meet</a>
+                    <p>4am-5am</p>
+                    <a href="#meet">meet</a>
+                </div>
+            </div>
+            <div class="card" id="thru">
+                <h1>THRUSDAY</h1>
+                <div class="table">
+                    <p>Time</p>
+                    <p>Subject/Links</p>
+                    <p>8am-9am</p>
+                    <a href="#meet">meet</a>
+                    <p>9am-10am</p>
+                    <a href="#meet">meet</a>
+                    <p>10am-11am</p>
+                    <a href="#meet">meet</a>
+                    <p>11am-12am</p>
+                    <a href="#meet">meet</a>
+                    <p>1am-2am</p>
+                    <a href="#meet">meet</a>
+                    <p>2am-3am</p>
+                    <a href="#meet">meet</a>
+                    <p>3am-4am</p>
+                    <a href="#meet">meet</a>
+                    <p>4am-5am</p>
+                    <a href="#meet">meet</a>
+                </div>
+            </div>
+            <div class="card" id="fri">
+                <h1>FRIDAY</h1>
+                <div class="table">
+                    <p>Time</p>
+                    <p>Subject/Links</p>
+                    <p>8am-9am</p>
+                    <a href="#meet">meet</a>
+                    <p>9am-10am</p>
+                    <a href="#meet">meet</a>
+                    <p>10am-11am</p>
+                    <a href="#meet">meet</a>
+                    <p>11am-12am</p>
+                    <a href="#meet">meet</a>
+                    <p>1am-2am</p>
+                    <a href="#meet">meet</a>
+                    <p>2am-3am</p>
+                    <a href="#meet">meet</a>
+                    <p>3am-4am</p>
+                    <a href="#meet">meet</a>
+                    <p>4am-5am</p>
+                    <a href="#meet">meet</a>
+                </div>
+            </div>
+            <div class="card" id="holiday">
+                <h1>HOLIDAY</h1>
+                <div class="table">
+                    <p>Sit back and Relax.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sidenote -->
+    <div class="sidenote" id="sidenote-1">
+        CSE 2nd sem sec-K
+    </div>
+    <div class="sidenote" id="sidenote-2">
+        Created-2022
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: black;
+}
+.intro{
+    height: 100vh;
+}
+.intro video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;   /* streach out to cover full specified area */
+}
+
+.intro h1{
+    position: absolute;
+    color: white;
+
+    /* centering text */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 3rem;
+}
+
+.body{
+    height: 100vh;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.body .right img{
+    filter: invert(100%);
+    width: 100%;
+}

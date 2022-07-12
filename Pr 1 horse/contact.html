@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASWAH</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone.css">
+
+</head>
+<body>
+    <!-- navbar -->
+    <header>
+        <nav id="navbar">
+            <div class="logo">
+                <img src="images/ASWAH.png" alt="">
+            </div>
+            <div id="navlist">
+                <ul>
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./about.html">About us</a></li>
+                    <li><a href="./contact.html">Contact us</a></li>
+                    <button id="bg" onclick="toogle_bg()">Toogle Bg</button>
+                </ul>
+            </div>
+            <div class="searchbar">
+                <input type="search" name="search" id="search" placeholder="Search">
+            </div>
+            <button id="menu">...</button>
+        </nav>
+    </header>
+    <div class="form">
+        <form action="https://formspree.io/f/xeqnkvon" method="POST">
+            <!-- using form spree it works -->
+        <!-- <form action="./contact_submit.html"> -->
+            <!-- <form action="https://formsubmit.co/el/ribola" method="POST" /> -->
+            <label for="name">Name :</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <label for="address">Address :</label>
+            <input type="address" id="address" name="address" placeholder="Address">
+            <label for="message">Message :</label>
+            <textarea name="message" id="message" name="message" cols="30" rows="10" placeholder="  messages" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+    </div>
+    
+    <footer><p>Copyright &copy; 2022</p><p>All Rights Reserved</p></footer>
+</body>
+<script src="index.js"></script>
+<script src="contact.js"></script>
+</html>

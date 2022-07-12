@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Navigation Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:600px)" href="phone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@500&family=Comforter&family=Festive&family=Roboto+Mono&family=Stylish&family=Supermercado+One&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="side-nav">
+            <a class="logo"><i onclick="toogle_side_menu()" class="fa-brands fa-bots"></i></a>
+            <ul class="nav-links">
+                <li>
+                    <a href="./home.html">
+                        <i class="fa-solid fa-house"></i>
+                        <p class="hide">HOME</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./info.html">
+                        <!-- info about the buttons -->
+                        <i class="fa-solid fa-circle-info"></i>
+                        <p class="hide">INFO</p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <i onclick="toogle_bg()" class="fa-solid fa-feather-pointed"></i>
+                        <!-- <i class="fa-solid fa-gem"></i> -->
+                        <!-- change bg image -->
+                        <p onclick="toogle_bg()" class="hide">TOOGLE BG</p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <i onclick="gsap_animation()" class="fa-solid fa-fan"></i>
+                        <!-- rotate icon by default and on click use prev project -->
+                        <p onclick="gsap_animation()" class="anime1 hide">GSAP ANIMATION</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <!-- info about website -->
+                        <i class="fa-regular fa-address-card"></i>
+                        <p class="hide">ABOUT</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://v0vgutu0o6snkiy35brzqq-on.drv.tw/Flip%20card/home.html">
+                        <i class="fa-solid fa-phone"></i>
+                        <p class="hide">CONTACT</p>
+                    </a>
+                </li>
+                <div class="active"></div>
+            </ul>
+            
+        </div>
+    </div>
+
+    <!-- <div class="body">
+        
+    </div> -->
+
+    <script src="https://kit.fontawesome.com/4567dbf192.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+</html>

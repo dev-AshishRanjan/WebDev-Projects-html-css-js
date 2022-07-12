@@ -1,0 +1,30 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg,#5927E5,#362b48);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fef6ff;
+    overflow: hidden;
+}
+h1{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+h2{
+    font-size: 3rem;
+}
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASWAH</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone.css">
+    <style>
+        #thanks {
+            height: 86vh;
+            font-size: 1.5rem;
+            display: grid;
+            place-content: center;
+            place-items: center;
+            color: white;
+            font-family: cursive;
+            text-align: center;
+            /* background-color: white; */
+        }
+        body{
+            background: linear-gradient(45deg,rgba(0, 17, 255, 0.288),rgba(20, 202, 29, 0.274)),url("./images/taylor-brandon-3HmP1kOdACU-unsplash.jpg") no-repeat center center / cover;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- navbar -->
+    <header>
+        <nav id="navbar">
+            <div class="logo">
+                <img src="images/ASWAH.png" alt="">
+            </div>
+            <div id="navlist">
+                <ul>
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./about.html">About us</a></li>
+                    <li><a href="./contact.html">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="searchbar">
+                <input type="search" name="search" id="search" placeholder="Search">
+            </div>
+            <button id="menu">...</button>
+        </nav>
+    </header>
+    <div id="thanks">
+        <div>
+            <p>Thanks for trying to contact us.</p>
+            <p>We will contact back in 2-3 working days.</p>
+            <p>Have a good day !</p>
+
+        </div>
+
+    </div>
+    
+    <footer><p>Copyright &copy; 2022</p><p>All Rights Reserved</p></footer>
+</body>
+<script src="index.js"></script>
+
+<script>
+    function toogle_bg2(){
+    let count=(Math.random())*255;
+    document.querySelector("body").style.background = `linear-gradient(${count}deg,rgba(${count/2}, ${count}, ${255-count}, ${count/255}),rgba(${255-count}, ${count/2}, ${count}, ${count/255})),url("./images/taylor-brandon-3HmP1kOdACU-unsplash.jpg") no-repeat center center / cover`;
+    // document.querySelector("body").style.background = "linear-gradient(45deg,red,blue)";
+    console.log(document.querySelector("body").style.background);
+}
+setInterval(toogle_bg2, 5000);
+</script>
+
+</html>

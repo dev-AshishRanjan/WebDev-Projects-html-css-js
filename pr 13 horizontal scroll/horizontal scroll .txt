@@ -1,0 +1,10 @@
+use skroller.js
+    gooogle search skroller.js
+    go to the github link
+    go to src
+    go to raw,save it in your project
+    go to let's get serious section and copy the code and paste in your html
+    in your main tag of html insert the following code ==>  data-0="transform:translateX(0%);" data-6000="transform:translateX(-600%);"
+
+use min-width:100vw; on pages
+

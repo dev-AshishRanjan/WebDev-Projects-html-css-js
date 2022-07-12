@@ -1,0 +1,14 @@
+.side-nav{
+    width: 100px;
+    height: 47%;
+}
+
+.logo i{
+    width: 50px;
+    margin: 0px;
+    margin-bottom:6vw;
+    font-size: 3rem;
+}
+.nav-links li a p{
+    display: none;
+}

@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(255, 192, 203, 0.158),rgba(173, 216, 230, 0.164));
+    padding: 0 5%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    height: 7rem;
+    width: 7rem;
+    /* filter: grayscale(100%); */
+}
+.navbar ul{
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.content{
+    text-align: center;
+}
+.content h1{
+    font-size: 7rem;
+    color: white;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.content a{
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+    background: transparent;
+    border-radius: 1rem;
+    border: 1px solid white;
+    font-weight: 700;
+    transition: all 0.3s linear;
+}
+.content a:hover{
+    background: white;
+    color: black;
+}
+.bg{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+/* important */
+@media (min-aspect-ratio:16/9){
+    .bg{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio:16/9){
+    .bg{
+        width: auto;
+        height: 100%;
+    }
+    .navbar{
+        display: none;
+    }
+}
+
+.content h1:hover{
+    -webkit-text-stroke: 2px white;  /*  */
+    color: transparent;
+}

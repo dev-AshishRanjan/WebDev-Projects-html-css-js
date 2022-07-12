@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1{
+    color: rgb(96, 109, 230);
+    font-size: 3rem;
+    font-weight: 600;
+    opacity: 0.7;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+}
+h2,p{
+    color: rgb(96, 158, 230);
+    font-weight: 500;
+    opacity: 0.7;
+}
+h3{
+    color: rgb(96, 109, 230);
+    font-weight: 600;
+    opacity: 0.7;
+}
+main{
+    min-height: 100vh;      /* responsive */
+    background: linear-gradient(45deg,#dab27dfd,#87acf0);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.glass{
+    background: linear-gradient(45deg,rgba(255, 255, 255, 0.753),rgba(255, 255, 255, 0.205));
+    min-height: 80vh;
+    width: 60%;    /* responsive */
+    border-radius: 2rem;
+    z-index: 5;
+
+    /* blur effect */
+    backdrop-filter: blur(1rem);      /* imp */
+}
+
+.circle{
+    /* same property as glass */
+    background: linear-gradient(45deg,rgba(255, 255, 255, 0.808),rgba(255, 255, 255, 0));
+    height: 10rem;
+    width: 10rem;
+    border-radius: 10rem;
+    position: absolute;
+}
+/* circles */
+#circle-1{
+    top: 5%;
+    left: 15%;
+    z-index: 1;
+    backdrop-filter: blur(1rem);
+}
+#circle-2{
+    bottom: 5%;
+    right: 15%;
+    z-index: 1;
+    backdrop-filter: blur(1rem);
+}
+#circle-3{
+    top: 25%;
+    left: 0%;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 7rem;
+    z-index: 1;
+    backdrop-filter: blur(1rem);
+}
+#circle-4{
+    top: 55%;
+    left: 5%;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 3rem;
+    z-index: 1;
+    backdrop-filter: blur(1rem);
+}
+#circle-5{
+    top: 5%;
+    right: 5%;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 5rem;
+    z-index: 1;
+    backdrop-filter: blur(1rem);
+}
+#circle-6{
+    top: 15%;
+    right: 7%;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 2rem;
+    z-index: 1;
+    backdrop-filter: blur(1rem);
+}
+
+/* dashboard */
+.dashboard .user img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
+    padding: 0.2rem;
+}
+.card img{
+    width: 6rem;
+    height: 4rem;
+}
+
+.glass{
+    display: flex;
+}
+.dashboard{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    text-align: center;
+
+    background: linear-gradient(45deg,rgba(255, 255, 255, 0.753),rgba(255, 255, 255, 0.199));
+    border-radius: 2rem;
+}
+.link i{
+    color:rgb(96, 158, 230) ;
+}
+.link{
+    display: flex;
+    margin: 2rem 0rem;
+    padding: 1rem 5vw;
+    align-items: center;
+}
+.link h2{
+    padding-left: 2rem;
+}
+.games{
+    flex:2;     /* width 2 times hoga */
+}
+.advertise{
+    background: linear-gradient(45deg,#7ddabbfd,#ecbbec);
+    border-radius: 2rem;
+    color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 4px 4px 10px rgb(110, 110, 110);
+
+    position: relative;
+}
+.advertise h2{
+    width: 50%;
+    color: white;
+    font-weight: 600;
+}
+.advertise i{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    font-size: 5rem;
+    color: #87acf0;
+}
+
+/* game section  */
+.status{
+    margin-bottom: 3rem;
+}
+.status input{
+    background: linear-gradient(45deg,rgba(255, 255, 255, 0.753),rgba(255, 255, 255, 0.205));
+    border: none;
+    border-radius: 1rem;
+    width: 50%;
+    padding: 0.5rem;
+}
+.games{
+    padding: 1rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.card{
+    display: flex;
+    background: linear-gradient(45deg,rgba(255, 255, 255, 0.425),rgba(255, 255, 255, 0.822));
+    border-radius: 1rem;
+    margin: 2rem 0;
+    padding: 2rem;
+    box-shadow: 4px 4px 4px rgba(189, 188, 188, 0.575);
+    justify-content: space-between;
+}
+
+/* progress bar */
+.progress{
+    background: linear-gradient(45deg,#7ddabbfd,#ecbbec);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+.progress::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(231, 231, 231);
+    position: absolute;
+    left: 60%;
+}
+.card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.percentage{
+    font-weight: bold;
+    background: linear-gradient(45deg,#7ddabbfd,#ecbbec);
+    /* clipping off rests */
+    -webkit-background-clip: text;   /* clips only to text*/
+    -webkit-text-fill-color: transparent;
+}
+
+a{
+    text-decoration: none;
+}
